@@ -1,0 +1,59 @@
+
+media:
+  input: media
+  output: /media
+
+content:
+  - name: pengumuman
+    label: Pengumuman Warga
+    type: collection
+    path: content/pengumuman
+    fields:
+      - name: title
+        label: Judul Pengumuman
+        type: string
+      - name: date
+        label: Tanggal
+        type: date
+      - name: body
+        label: Isi Pengumuman
+        type: rich-text
+
+  - name: agenda
+    label: Agenda Kegiatan
+    type: collection
+    path: content/agenda
+    fields:
+      - name: title
+        label: Nama Kegiatan
+        type: string
+      - name: date
+        label: Tanggal Kegiatan
+        type: date
+      - name: description
+        label: Keterangan
+        type: text
+
+  - name: program
+    label: Program Kerja
+    type: collection
+    path: content/program
+    fields:
+      - name: title
+        label: Nama Program
+        type: string
+      - name: description
+        label: Deskripsi
+        type: text
+
+  - name: galeri
+    label: Galeri Kegiatan
+    type: collection
+    path: content/galeri
+    fields:
+      - name: title
+        label: Nama Foto
+        type: string
+      - name: image
+        label: Foto Kegiatan
+        type: image
